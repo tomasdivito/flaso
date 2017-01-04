@@ -1,0 +1,15 @@
+.name {
+  text-align: center;
+  font-size: 23;
+  color: white;
+}
+
+.address {
+  text-align: center;
+  font-size: 19;
+  color: white;
+}
+
+Image {
+  margin-bottom: 15px;
+}

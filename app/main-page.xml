@@ -1,0 +1,47 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" >
+    <ScrollView>
+      <StackLayout>
+        <!--Header area start!-->
+        <Image src="~/images/header.png" horizontalAlignment="center"/>
+        <TextView class="redheader" text="Del 8 al 12 de FEBRERO" />
+
+        <TextView class="header" text="Usa la aplicacion para enterarte de lo ultimo en el evento" isEditable="false" />
+        <!--Header area stop!-->
+        <!-- Area de menu!-->
+        <Image src="~/images/botones/estrellas_invitadas.png" horizontalAlignment="center" tap="estrellas_invitadas" touch="touch_effect" />
+        <Image src="~/images/botones/workshop.png" horizontalAlignment="center" tap="workshop" touch="touch_effect" />
+        <Image src="~/images/botones/hotelyteatrosede.png" horizontalAlignment="center" tap="teatrohotelsede" touch="touch_effect"/>
+        <!--
+        Faq and other things area
+        !-->
+        <GridLayout rows="auto" columns="*, *">
+          <Image src="~/images/botones/reglamento_boton.png" row="0" col="0" touch="touch_effect" />
+          <Image src="~/images/botones/informacion_boton.png" row="0" col="1" touch="touch_effect" />
+        </GridLayout>
+
+
+        <ScrollView orientation="horizontal" class="gallery-with-description" >
+          <GridLayout rows="*" columns="300, 300, 300">
+            <StackLayout row="0" col="0" class="item_from_gallery" >
+              <Image src="~/images/otras/40_artistas.jpg" touch="touch_effect" />
+              <Label text="40 Artistas" text-align="center" />
+              <TextView text="Contamos con la presencia de grandes artistas como el último Gran Prix Fism Hector Mancha, Roberto Giobbi, Jean Pierre Vallarino, Dani Daortiz, entre otras grandes estrellas nacionales e internacionales de la magia." />
+            </StackLayout>
+
+            <StackLayout row="0" col="1" class="item_from_gallery" >
+              <Image src="~/images/otras/40_dealers.jpg" touch="touch_effect" />
+              <Label text="40 Dealers" text-align="center" />
+              <TextView text="Las más prestigiosas tiendas de Latinoamérica estarán presentes para ofrecer sus productos." />
+            </StackLayout>
+
+            <StackLayout row="0" col="2" class="item_from_gallery" >
+              <Image src="~/images/otras/600_congresistas.jpg" touch="touch_effect" />
+              <Label text="600 congresistas" text-align="center" />
+              <TextView text="Ya se han anotado más de 600 congresistas de 15 diferentes países de América y Europa." />
+            </StackLayout>
+          </GridLayout>
+        </ScrollView>
+
+       </StackLayout>
+      </ScrollView>
+</Page>

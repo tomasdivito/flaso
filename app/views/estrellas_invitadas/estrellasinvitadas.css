@@ -1,0 +1,25 @@
+Page {
+  color: white;
+  text-align: center;
+}
+
+StackLayout {
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.name {
+  font-size: 30;
+  font-style:oblique;
+  font-weight: bold;
+}
+
+.country {
+  font-size: 20;
+  font-style: italic;
+}
+
+Image {
+  stretch: aspectFit;
+  height: 150px;
+}

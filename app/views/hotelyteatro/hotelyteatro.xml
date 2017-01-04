@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <ScrollView>
+    <StackLayout>
+      <Label class="title" text="Hotel y teatro sede" />
+      <Label class="name" text="Teatro Avenida" />
+      <Label class="address" text="Av. de Mayo 1222, Buenos Aires" />
+      <Button text="{{sign_teatro ? '- Minimizar view' : '+ Maximizar view'}}" tap="resize_viewmodel_teatro" />
+      <WebView src="{{ htmlString_teatro }}" height="{{resize_teatro ? 300 : 150}}" />
+      <ScrollView orientation="horizontal" >
+        <GridLayout rows="*, *" columns="300, 300, 300" >
+          <Image src="~/images/hotelteatro/1_teatro.jpg" row="0" col="0" />
+          <Image src="~/images/hotelteatro/3_teatro.jpg" row="0" col="1" />
+          <Image src="~/images/hotelteatro/2_teatro.jpg" row="0" col="3" />
+        </GridLayout>
+      </ScrollView>
+
+      <Label class="name" text="Hotel Panamericano" />
+      <Label class="address" text="Carlos Pellegrini 551, Buenos Aires" />
+      <Button text="{{sign_hotel ? '- Minimizar view' : '+ Maximizar view'}}" tap="resize_viewmodel_hotel" />
+      <WebView src="{{ htmlString_hotel }}" height="{{resize_hotel ? 300 : 150}}" />
+      <ScrollView orientation="horizontal" >
+        <GridLayout rows="*" columns="300, 300, 300" >
+          <Image src="~/images/hotelteatro/1_hotel.jpg" row="0" col="0" />
+          <Image src="~/images/hotelteatro/2_hotel.jpg" row="0" col="1" />
+          <Image src="~/images/hotelteatro/3_hotel.jpg" row="0" col="3" />
+        </GridLayout>
+      </ScrollView>
+    </StackLayout>
+
+  </ScrollView>
+</Page>
