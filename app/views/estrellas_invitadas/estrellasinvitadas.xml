@@ -2,15 +2,16 @@
   <Label class="title" text="Estrellas Invitadas" />
   <ScrollView>
     <StackLayout>
-
-    </StackLayout>
-    <StackLayout id="myContainer"  row="1">
       <Image src="~/images/otras/40_artistas.jpg" height="150"/>
-      <TextView text="Descubre a los 40 artistas invitados" class="subtitle" />
-      <TextView text="en FLASOMA 2017" class="subtitle" />
-      <Image src="{{imgPath}}" swipe="swipeStack"/>
-      <TextView text="{{name}}" text-align="center" class="name"/>
-      <TextView text="{{country}}" text-align="center" class="country" />
+      <TextView text="Descubre a los 40 artistas invitados en FLASOMA 2017" class="subtitle" />
+
+      <ScrollView orientation="horizontal" class="gallery">
+        <GridLayout rows="*" columns="*, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"  id="gridgallery">
+
+        </GridLayout>
+      </ScrollView>
+
+
     </StackLayout>
   </ScrollView>
 </Page>

@@ -1,16 +1,7 @@
-var observable      = require("data/observable");
-var observableArray = require("data/observable-array").ObservableArray
-var LabelModule = require("ui/label");
-var ImageModule = require("ui/image");
-
-var viewmodel = new observable.Observable({});
-
-var name;
-var lastName;
-var country;
-var imgPath;
-var currentIndex = 0;
-var layout;
+var Image = require("ui/image").Image;
+var TextView = require("ui/text-view").TextView;
+var StackLayout = require("ui/layouts/stack-layout").StackLayout;
+var layout = require("ui/layouts/grid-layout");
 
 var  magicians = [
     {name: "Alex Nebur", country: "Argentina", imgPath: "~/images/artists/alexNebur - argentina.png"},
@@ -29,67 +20,52 @@ var  magicians = [
     {name: "Fred Karis", country: "USA", imgPath: "~/images/artists/fredKaris - USA.png"},
     {name: "Gaferlo", country: "Mexico", imgPath: "~/images/artists/gaferlo - mexico.png"},
     {name: "Gustav", country: "Argentina", imgPath: "~/images/artists/gustav - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
-    {name: "", country: "Argentina", imgPath: "~/images/artists/ - argentina.png"},
+    {name: "Gustavo Raley", country: "Argentina", imgPath: "~/images/artists/gustavoRaley - argentina.png"},
+    {name: "Hector Mancha", country: "España", imgPath: "~/images/artists/hectorMancha - españa.png"},
+    {name: "Henry Evans", country: "Argentina", imgPath: "~/images/artists/henryEvans - argentina.png"},
+    {name: "Hernic", country: "Argentina", imgPath: "~/images/artists/hernic - argentina.png"},
+    {name: "Jean Paul Olhaberry", country: "Chile", imgPath: "~/images/artists/jeanPaulOlhaberry - chile.png"},
+    {name: "Jean Pierre Vallarino", country: "Francia", imgPath: "~/images/artists/jeanPierreVallarino - francia.png"},
+    {name: "Jim", country: "Mexico", imgPath: "~/images/artists/jim - mexico.png"},
+    {name: "Juan Pablo Ibanez", country: "Argentina", imgPath: "~/images/artists/juanPabloIbanez - argentina.png"},
+    {name: "Karim", country: "España", imgPath: "~/images/artists/karim - españa.png"},
+    {name: "Luis Otero", country: "Venezuela", imgPath: "~/images/artists/luisOtero - venezuela.png"},
+    {name: "Marcelo Bonetti", country: "Argentina", imgPath: "~/images/artists/marceloBonetti - argentina.png"},
+    {name: "Marcius Matias", country: "Argentina", imgPath: "~/images/artists/marciusMatias - argentina.png"},
+    {name: "Marko", country: "Panama", imgPath: "~/images/artists/marko - panamá.png"},
+    {name: "Norberto De Sabato", country: "Argentina", imgPath: "~/images/artists/norbertoDeSabato - argentina.png"},
+    {name: "Red Star Seong", country: "Korea", imgPath: "~/images/artists/redStarSeong - korea.png"},
+    {name: "Rene Arboleda", country: "Ecuador", imgPath: "~/images/artists/reneArboleda - ecuador.png"},
+    {name: "Richard Sarmiento", country: "Colombia", imgPath: "~/images/artists/richardSarmiento - colombia.png"},
+    {name: "Roberto Giobbi", country: "Suiza", imgPath: "~/images/artists/robertoGiobbi - suiza.png"},
+    {name: "Rodo", country: "Argentina", imgPath: "~/images/artists/rodo - argentina.png"},
+    {name: "Spider", country: "Mexico", imgPath: "~/images/artists/spider - mexico.png"},
+    {name: "Uno Medio", country: "Argentina", imgPath: "~/images/artists/unoMedio - argentina.png"},
+    {name: "Volkane", country: "Argentina", imgPath: "~/images/artists/volkane - argentina.png"},
+    {name: "Zerrot", country: "Argentina", imgPath: "~/images/artists/zerrot - argentina.png"},
   ];
 
-exports.swipeStack = function(args) {
-  // args.direction
-  // 1 if left
-  // 2 if right
-  if(args.direction === 1) {
-    if(currentIndex === 0) {
-      currentIndex = magicians.length-1;
-      update();
-    }
-    else {
-      currentIndex--;
-      update();
-    }
-  }
-  else if(args.direction === 2) {
-    if(currentIndex === magicians.length-1) {
-      currentIndex = 0;
-      update();
-    }
-    else {
-      currentIndex++;
-      update();
-    }
-  }
-}
+var loadGridGallery = function(gg) {
+  for(var i = 0; i < magicians.length; i++) {
+    var stackLayout = new StackLayout();
+    layout.GridLayout.setColumn(stackLayout, i);
+    gg.addChild(stackLayout);
 
-var animateLayout = function(layout, val) {
-  layout.animate({
-    opacity: val, duration: 400
-  })
+    var img = new Image();
+    img.src = magicians[i].imgPath;
+    var txtname = new TextView();
+    txtname.text = magicians[i].name;
+    var txtcountry = new TextView();
+    txtcountry.text = magicians[i].country;
+
+    stackLayout.addChild(img);
+    stackLayout.addChild(txtname);
+    stackLayout.addChild(txtcountry);
+  }
 }
 
 exports.pageLoaded = function(args) {
-  page = args.object;
-  layout = page.getViewById('myContainer')
-  page.bindingContext = viewmodel;
-  update();
-}
-
-var update = function() {
-  layout.opacity = 0;
-  name = magicians[currentIndex].name;
-  lastName = magicians[currentIndex].lastName;
-  country = magicians[currentIndex].country;
-  imgPath = magicians[currentIndex].imgPath;
-  viewmodel.set("name", name);
-  viewmodel.set("country", country);
-  viewmodel.set("imgPath", imgPath);
-  animateLayout(layout, 1);
+  var page = args.object;
+  var gridgallery = page.getViewById('gridgallery')
+  loadGridGallery(gridgallery);
 }

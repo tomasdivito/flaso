@@ -5,7 +5,10 @@ Page {
 
 StackLayout {
   vertical-align: middle;
-  opacity: 0;
+}
+
+.gallery {
+  vertical-align: middle;
 }
 
 .name {
@@ -20,6 +23,6 @@ StackLayout {
 }
 
 Image {
-  stretch: aspectFit;
-  height: 150px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
