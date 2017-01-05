@@ -1,19 +1,51 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
   <ScrollView>
     <StackLayout id="workshop_title">
-      <Image src="~/images/botones/workshop.png" tap="hide_unhide"/>
-      <TextView font-weight="bold" text="workshop 1" />
+      <Image id="workshop1" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView font-weight="bold" text="Roberto Giobbi" />
       <StackLayout id="workshop_description_1">
-        <TextView visibility="collapse" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
+        <TextView visibility="{{ workshop1_visible ? 'visible' : 'collapse' }}" text=" Día lunes 13 febrero de 2017 - 15 hs. / Duración: 3 horas.
+
+Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
+
+El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
+
+Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
+
+Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
+      </StackLayout>
+
+      <Image id="workshop2" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView font-weight="bold" text="workshop 2" />
+      <StackLayout id="workshop_description_2">
+        <TextView visibility="{{ workshop2_visible ? 'visible' : 'collapse' }}" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
           El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
           Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
           Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
       </StackLayout>
 
-      <Image src="~/images/botones/workshop.png" tap="hide_unhide"/>
-      <TextView font-weight="bold" text="workshop 2" />
-      <StackLayout id="workshop_description_2">
-        <TextView visibility="collapse" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
+      <Image id="workshop3" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView font-weight="bold" text="workshop 3" />
+      <StackLayout id="workshop_description_3">
+        <TextView visibility="{{ workshop3_visible ? 'visible' : 'collapse' }}" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
+          El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
+          Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
+          Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
+      </StackLayout>
+
+      <Image id="workshop4" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView font-weight="bold" text="workshop 4" />
+      <StackLayout id="workshop_description_4">
+        <TextView visibility="{{ workshop4_visible ? 'visible' : 'collapse' }}" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
+          El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
+          Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
+          Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
+      </StackLayout>
+
+      <Image id="workshop5" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView font-weight="bold" text="workshop 5" />
+      <StackLayout id="workshop_description_5">
+        <TextView visibility="{{ workshop5_visible ? 'visible' : 'collapse' }}" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
           El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
           Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
           Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
