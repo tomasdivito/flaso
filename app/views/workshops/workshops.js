@@ -5,8 +5,8 @@ var visible;
 
 var hide_unhide = function(args) {
   var toHide = page.getViewById("workshop_description_1");
-  visible = !toHide.visibility;
-  toHide.visibility = visibile;
+  alert(toHide.visibility);
+  alert(!toHide.visibility);
 }
 exports.hide_unhide = hide_unhide;
 
