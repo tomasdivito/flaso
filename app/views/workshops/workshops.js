@@ -1,5 +1,5 @@
 var gestures = require("ui/gestures");
-var Visibility = require("ui/enums").Visibility;
+var Visibility = require("ui/enums");
 
 var page;
 
