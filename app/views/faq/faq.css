@@ -1,0 +1,38 @@
+.faq_section {
+
+}
+
+.question {
+  color: red;
+  margin: 10px;
+
+
+}
+
+TextView.question {
+  border-color: #262626;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+TextView.respuesta {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #1a1a1a;
+  color: #d9d9d9;
+}
+
+
+TextView.title {
+  background-color: #262626;
+  margin-top: 0px;
+  font-size: 25;
+  font-weight: bold;
+}
+
+GridLayout {
+
+}
+
+Page {
+}

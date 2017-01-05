@@ -7,6 +7,11 @@ StackLayout {
   vertical-align: middle;
 }
 
+.subtitle {
+  font-weight: bold;
+  margin: 10px;
+}
+
 .gallery {
   vertical-align: middle;
 }

@@ -1,0 +1,97 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar title="action bar">
+      <StackLayout orientation="horizontal"
+        ios:horizontalAlignment="center"
+        android:horizontalAlignment="center">
+        <Image src="~/images/logo_lg.png" class="action-image"></Image>
+      </StackLayout>
+    </ActionBar>
+  </Page.actionBar>
+  <ScrollView>
+    <StackLayout class="faq_section">
+
+      <TextView class="title" text="Preguntas frecuentes" />
+      <!-- pregunta 1 !-->
+      <GridLayout  rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView class="question" text="Horario" col="0"/>
+        <Button id="pregunta1" tap="toggle"  text="{{ pregunta1_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta1_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="Generalmente los horarios de las actividades se extenderán de 9.00 AM hasta las 11.30 PM. Más adelante se brindará la información completa de los horarios de todas las actividades." />
+      </StackLayout>
+
+      <!-- pregunta 2 !-->
+      <GridLayout class="question" rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView class="question"   text="Opciones de alojamiento" col="0"/>
+        <Button  id="pregunta2" tap="toggle"  text="{{ pregunta2_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta2_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="Hay variadas opciones de hoteles cercanos desde 2 estrellas a 5 estrellas. Consultenos por la información." />
+      </StackLayout>
+
+      <!-- pregunta 3 !-->
+      <GridLayout class="question" rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView class="question"   id="pregunta3" text="Servicio de transporte" col="0"/>
+        <Button  id="pregunta3"  tap="toggle"  text="{{ pregunta3_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta3_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="Entre el hotel sede y el teatro hay solo siete calles de distancia, pero Buenos Aires cuenta con nutrido servicio de taxis, metro y metrobus." />
+      </StackLayout>
+
+      <!-- pregunta 4 !-->
+      <GridLayout  class="question" rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView  class="question"  text="Boleteria" col="0"/>
+        <Button id="pregunta4"  tap="toggle"  text="{{ pregunta4_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta4_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="En el teatro estará habilitada para venta de entradas a los shows únicamente." />
+      </StackLayout>
+
+      <!-- pregunta 5 !-->
+      <GridLayout  class="question" rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView  class="question"  text="Disponibilidad de entradas para las galas" col="0"/>
+        <Button id="pregunta5"  tap="toggle"  text="{{ pregunta5_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta5_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="En el teatro habrá venta al público de localidades para los shows. Las mismas estarán disponibles a partir de diciembre de 2016" />
+      </StackLayout>
+
+      <!-- pregunta 6 !-->
+      <GridLayout  class="question" rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView  class="question"  text="Acceso y seguridad" col="0"/>
+        <Button id="pregunta6"  tap="toggle"  text="{{ pregunta6_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta6_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="Te informaremos la forma de acceder a todas las actividades de forma segura y sin ningún contratiempo." />
+      </StackLayout>
+
+      <!-- pregunta 7 !-->
+      <GridLayout  class="question" rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView class="question"   text="Clima" col="0"/>
+        <Button id="pregunta7"  tap="toggle"  text="{{ pregunta7_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta7_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="En Buenos Aires, en las fechas del Congreso, estamos en pleno verano. Las temperaturas oscilan entre 25ºC y 30ºC en el día." />
+      </StackLayout>
+
+      <!-- pregunta 8 !-->
+      <GridLayout  class="question" rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView  class="question"  text="Items permitidos" col="0"/>
+        <Button id="pregunta8"  tap="toggle"  text="{{ pregunta8_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta8_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="Tomar fotos en COMPETENCIAS." />
+      </StackLayout>
+
+      <!-- pregunta 9 !-->
+      <GridLayout  class="question" rows="*" columns="*, auto"  touch="touch_effect">
+        <TextView  class="question"  text="Items prohibidos" col="0"/>
+        <Button id="pregunta9"  tap="toggle"  text="{{ pregunta9_sign ? '-' : '+' }}" col="1"/>
+      </GridLayout>
+      <StackLayout class="answer" visibility="{{pregunta9_visible ? 'visible' : 'collapse' }}">
+        <TextView class="respuesta"  text="El uso de videocámaras o teléfonos celulares en COMPETENCIAS, CONFERENCIAS Y GALAS." />
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</Page>

@@ -1,0 +1,41 @@
+TextView.workshop_name {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: white;
+  background-color: #1a1a1a;
+
+  margin-left:35px;
+  margin-right:35px;
+}
+
+Image.workshop_image {
+  margin-left:20px;
+  margin-right:20px;
+
+  border-width: 1px;
+  border-radius: 6px;
+  border-color: #e6e6e6;
+}
+
+TextView.description_date {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+TextView.description_content {
+  text-align: left;
+  font-size: 15px;
+
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+StackLayout {
+  margin-bottom: 20px;
+}

@@ -1,25 +1,36 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" >
+    <Page.actionBar>
+      <ActionBar title="action bar">
+        <StackLayout orientation="horizontal"
+          ios:horizontalAlignment="center"
+          android:horizontalAlignment="center">
+          <Image src="~/images/logo_lg.png" class="action-image"></Image>
+        </StackLayout>
+      </ActionBar>
+    </Page.actionBar>
     <ScrollView>
       <StackLayout>
         <!--Header area start!-->
-        <Image src="~/images/header.png" horizontalAlignment="center"/>
+        <Image src="~/images/header.png" horizontalAlignment="center" tap="toggle_header" tap="touch_effect"/>
+        <TextView visibility="{{ isVisible ? 'visible' : 'collapse'}}" class="congreso" text="XII CONGRESO LATINOAMERICANO DE MAGIA 2017" />
+        <TextView visibility="{{ isVisible ? 'visible' : 'collapse'}}" class="campeonato" text="IV CAMPEONATO DE MAGIA FISM LATINOAMERICA" />
         <TextView class="redheader" text="Del 8 al 12 de FEBRERO" />
 
-        <TextView class="header" text="Usa la aplicacion para enterarte de lo ultimo en el evento" isEditable="false" />
         <!--Header area stop!-->
         <!-- Area de menu!-->
-        <Image src="~/images/botones/estrellas_invitadas.png" horizontalAlignment="center" tap="estrellas_invitadas" touch="touch_effect" />
-        <Image src="~/images/botones/workshop.png" horizontalAlignment="center" tap="workshop" touch="touch_effect" />
-        <Image src="~/images/botones/hotelyteatrosede.png" horizontalAlignment="center" tap="teatrohotelsede" touch="touch_effect"/>
-        <!--
-        Faq and other things area
-        !-->
-        <GridLayout rows="auto" columns="*, *">
-          <Image src="~/images/botones/reglamento_boton.png" row="0" col="0" touch="touch_effect" />
-          <Image src="~/images/botones/informacion_boton.png" row="0" col="1" touch="touch_effect" />
+        <Image class="button_img" src="~/images/botones/imagenes_evento_boton.png" horizontalAlignment="center" touch="touch_effect" />
+        <Image class="button_img" src="~/images/botones/estrellas_invitadas.png" horizontalAlignment="center" tap="estrellas_invitadas" touch="touch_effect" />
+        <Image class="button_img" src="~/images/botones/workshop.png" horizontalAlignment="center" tap="workshop" touch="touch_effect" />
+        <Image class="button_img" src="~/images/botones/hotelyteatrosede.png" horizontalAlignment="center" tap="teatrohotelsede" touch="touch_effect"/>
+        <GridLayout rows="auto, auto" columns="*, *">
+          <Button class="button_menu" text="Mas informacion del evento" row="0" col="0" touch="touch_effect" />
+          <Button class="button_menu" text="F A Q" row="0" col="1" touch="touch_effect" tap="faq" />
+          <Button class="button_menu" text="Sitio oficial" row="1" col="0" touch="touch_effect" id="website" tap="gotoweb"/>
+          <Button class="button_menu" text="Comite organizador y colaboradores" row="1" col="1" touch="touch_effect" />
         </GridLayout>
 
 
+        <!--Other stuff in the main!-->
         <ScrollView orientation="horizontal" class="gallery-with-description" >
           <GridLayout rows="*" columns="300, 300, 300">
             <StackLayout row="0" col="0" class="item_from_gallery" >
@@ -41,7 +52,15 @@
             </StackLayout>
           </GridLayout>
         </ScrollView>
+        <TextView class="footer_app" text="Usa la aplicacion para enterarte de lo ultimo en el evento" isEditable="false" />
 
+        <ScrollView orientation="horizontal" margin-top="20px">
+          <GridLayout rows="*" columns="150, 150, 150">
+            <Image touch="touch_effect" id="sponsor-flasoma" class="sponsor" col="0" src="~/images/sponsors/sponsor-img3.jpg" tap="gotoweb" />
+            <Image touch="touch_effect" id="sponsor-fism" class="sponsor" col="1" src="~/images/sponsors/sponsor-img2.jpg" tap="gotoweb" />
+            <Image touch="touch_effect" id="sponsor-gbcba" class="sponsor" col="2" src="~/images/sponsors/sponsor-img1.jpg" tap="gotoweb" />
+          </GridLayout>
+        </ScrollView>
        </StackLayout>
       </ScrollView>
 </Page>

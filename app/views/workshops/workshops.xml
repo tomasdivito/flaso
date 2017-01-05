@@ -1,12 +1,28 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <ScrollView>
-    <StackLayout id="workshop_title">
-      <Image id="workshop1" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
-      <TextView font-weight="bold" text="Roberto Giobbi" />
-      <StackLayout id="workshop_description_1">
-        <TextView visibility="{{ workshop1_visible ? 'visible' : 'collapse' }}" text=" Día lunes 13 febrero de 2017 - 15 hs. / Duración: 3 horas.
+  <Page.actionBar>
+    <ActionBar title="action bar">
+      <StackLayout orientation="horizontal"
+        ios:horizontalAlignment="center"
+        android:horizontalAlignment="center">
+        <Image src="~/images/logo_lg.png" class="action-image"></Image>
+      </StackLayout>
+    </ActionBar>
+  </Page.actionBar>
 
-Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
+  <ScrollView>
+    <StackLayout>
+      <TextView text="Descubre los distintos workshops de los artistas en FLASOMA 2017" />
+    </StackLayout>
+    <StackLayout id="workshop_title">
+
+      <!-- Workshop 1 !-->
+      <Image class="workshop_image" id="workshop1" src="~/images/workshop/giobbi.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView class="workshop_name" text="Roberto Giobbi" />
+      <StackLayout id="workshop_description_1">
+        <TextView class="description_date" visibility="{{ workshop1_visible ? 'visible' : 'collapse' }}"
+          text="- Día lunes 13 febrero de 2017 - 15 hs. / Duración: 3 horas -"/>
+        <TextView class="description_content" visibility="{{ workshop1_visible ? 'visible' : 'collapse' }}"
+          text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
 
 El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
 
@@ -15,40 +31,63 @@ Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles t
 Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
       </StackLayout>
 
-      <Image id="workshop2" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
-      <TextView font-weight="bold" text="workshop 2" />
+      <!-- Workshop 2 !-->
+      <Image class="workshop_image" id="workshop2" src="~/images/workshop/ortiz.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView class="workshop_name" text="Dani Daortiz" />
       <StackLayout id="workshop_description_2">
-        <TextView visibility="{{ workshop2_visible ? 'visible' : 'collapse' }}" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
-          El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
-          Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
-          Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
+        <TextView class="description_date" visibility="{{ workshop2_visible ? 'visible' : 'collapse' }}"
+          text="- Día Viernes 10 febrero de 2017 - 23.30 hs. / Duración: 3 horas." />
       </StackLayout>
 
-      <Image id="workshop3" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
-      <TextView font-weight="bold" text="workshop 3" />
+      <!-- Workshop 3 !-->
+      <Image class="workshop_image" id="workshop3" src="~/images/workshop/evans.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView class="workshop_name" text="Henry Evans" />
       <StackLayout id="workshop_description_3">
-        <TextView visibility="{{ workshop3_visible ? 'visible' : 'collapse' }}" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
-          El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
-          Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
-          Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
+        <TextView class="description_date" visibility="{{ workshop3_visible ? 'visible' : 'collapse' }}"
+          text="- Día lunes 13 febrero de 2017 - 11 hs. / Duración: 3 horas -"/>
+        <TextView class="description_content" visibility="{{ workshop3_visible ? 'visible' : 'collapse' }}"
+          text="Para los amantes de la cartomagia, habra una seccion en donde se veran efectos clasicos con una mejora, con un sello personal, destacando la importancia de tener identidad, aun cuando realizamos un efecto clasico.
+
+“El juego que no tiene explicacion”
+
+Luego de haber incluido Henry en su show oficial, durante muchos años, un segmento de improvisacion, nos contara su punto de vista sobre la gran obra de Dai Vernon, dando su aporte con tecnicas nuevas, originales de su creacion que resultan ideales para aplicar en una improvisacion!!! Mostrara efectos que no requieren de ningun ordenamiento previo y que incluso podrian hacerse con barajas prestadas, lo que crea una atmosfera y un impacto magico mayor, en el publico.
+
+Otros conceptos que se trataran en profundidad:
+
+Estudio de la memoria,
+Recuerdos no tan verdaderos...
+Instalación de falsos recuerdos (Técnica de psicología fundamental para potenciar un efecto en la mente de los espectadores).
+Descubriendo nuestra propia esencia…
+Soñar un efecto y luego buscar el método.
+Técnicas de oratoria que justifican y acompañan al efecto puesto en acción" />
       </StackLayout>
 
-      <Image id="workshop4" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
-      <TextView font-weight="bold" text="workshop 4" />
+      <!-- Workshop 4 !-->
+      <Image class="workshop_image" id="workshop4" src="~/images/workshop/brando.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView class="workshop_name" text="Brando & Silvana" />
       <StackLayout id="workshop_description_4">
-        <TextView visibility="{{ workshop4_visible ? 'visible' : 'collapse' }}" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
-          El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
-          Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
-          Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
+        <TextView class="description_date" visibility="{{ workshop4_visible ? 'visible' : 'collapse' }}"
+          text="- Día lunes 13 febrero de 2017 - 11 hs. / Duración: 3 horas -"/>
+        <TextView class="description_content" visibility="{{ workshop4_visible ? 'visible' : 'collapse' }}"
+          text="Técnicas teatrales y corporales aplicadas a la Magia.
+
+(Quienes se inscriban puedan traer sus juegos bola zombie, mesa que flota etc,etc y trabajar con esto entre todos)" />
       </StackLayout>
 
-      <Image id="workshop5" src="~/images/botones/workshop.png" tap="hide_unhide" touch="touch_effect"/>
-      <TextView font-weight="bold" text="workshop 5" />
+      <!-- Workshop 5 !-->
+      <Image class="workshop_image" id="workshop5" src="~/images/workshop/marko.png" tap="hide_unhide" touch="touch_effect"/>
+      <TextView class="workshop_name" text="Marko" />
       <StackLayout id="workshop_description_5">
-        <TextView visibility="{{ workshop5_visible ? 'visible' : 'collapse' }}" text="Nos transportará por los luminosos senderos del pensamiento mágico de Dai Vernon, “El Profesor” Cubiletes, con explicaciones de sus más recónditos secretos, secuencias de cargas e incluso detalles psicológicos de la charla.
-          El Juego de las tres nueces en manos de Vernon, seguida de un análisis y comentarios de su estructura interna.
-          Dos grandes clásicos del Profesor, Las Cartas Viajeras y El Triunfo. Detalles técnicos y motivaciones psicológicas.
-          Rutina para seis Aros Chinos que Dai Vernon creó, rejuvenecida con detalles de manejo y estructura de Giobbi. Y sobre todo, con su cristalina visión del efecto." />
+        <TextView class="description_date" visibility="{{ workshop5_visible ? 'visible' : 'collapse' }}"
+          text="- Día lunes 13 febrero de 2017 - 15 hs. / Duración: 3 horas -"/>
+        <TextView class="description_content" visibility="{{ workshop5_visible ? 'visible' : 'collapse' }}"
+          text="El tema del mismo es la presentación en la magia de salón.
+
+Como hacer que los trucos que hacemos luzcan mágicos.
+
+Desarrollo de la charla mágica y la composición de programas.
+
+Todo con ejemplos de trucos prácticos." />
       </StackLayout>
     </StackLayout>
   </ScrollView>

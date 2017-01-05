@@ -3,30 +3,45 @@ var gestures      = require("ui/gestures");
 var observable    = require("data/observable");
 var webViewModule = require("ui/web-view");
 var frameModule   = require("ui/frame");
+var utilityModule = require("utils/utils");
 
 // Our new Observable view model for data binding
 var viewmodel = new observable.Observable({});
 
 
-
+//links section
 exports.estrellas_invitadas = function() {
-  frameModule.topmost().navigate("views/estrellas_invitadas/estrellasinvitadas")
+  frameModule.topmost().navigate("views/estrellas_invitadas/estrellasinvitadas");
 }
-
 exports.workshop = function() {
-  frameModule.topmost().navigate("views/workshops/workshops")
+  frameModule.topmost().navigate("views/workshops/workshops");
 }
-
 exports.teatrohotelsede = function() {
-  frameModule.topmost().navigate("views/hotelyteatro/hotelyteatro")
+  frameModule.topmost().navigate("views/hotelyteatro/hotelyteatro");
 }
+exports.faq = function() {
+  frameModule.topmost().navigate("views/faq/faq");
+}
+//end of link section
 
-exports.resize_viewmodel = function() {
-  //var view = args.object;
-  viewmodel.set("sign", !viewmodel.get("sign"));
-  viewmodel.set("resize", !viewmodel.get("resize"));
-  viewmodel.set("htmlString", '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.19233623234!2d-58.3838516!3d-34.609267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7ad5404e98d8613!2sTeatro+Avenida!5e0!3m2!1ses!2sar!4v1470673305099" width="100%" height="+"resize"+" frameborder="0" style="border:0" allowfullscreen="" class="img-responsive"></iframe>');
+function toggle_header() {
+  viewmodel.set("isVisible", !viewmodel.get("isVisible"));
 }
+exports.toggle_header = toggle_header;
+
+function gotoweb(args) {
+  var sender = args.object;
+  if(sender.id === "website") {
+    utilityModule.openUrl("http://www.flasomaargentina2017.com");
+  }
+  else if(sender.id === "sponsor-flasoma") {
+    utilityModule.openUrl("http://www.flasoma.org/");
+  }
+  else if(sender.id === "sponsor-fism") {
+    utilityModule.openUrl("http://fism.org/web/");
+  }
+}
+exports.gotoweb = gotoweb;
 
 function touch_effect(args) {
   obj = args.object;
