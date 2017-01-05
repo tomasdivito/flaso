@@ -3,7 +3,7 @@ var gestures = require("ui/gestures");
 var page;
 
 var hide_unhide = function(args) {
-  var toHide = getViewById(page, "workshop_description_1");
+  var toHide = page.getViewById("workshop_description_1");
   if(toHide.opacity === 0) {
     toHide.opacity = 100;
   }
