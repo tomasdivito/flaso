@@ -1,4 +1,3 @@
-var gestures = require("ui/gestures");
 var visibility = require("ui/enums");
 
 var page;
