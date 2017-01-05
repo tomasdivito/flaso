@@ -4,7 +4,6 @@
         <!--Header area start!-->
         <Image src="~/images/header.png" horizontalAlignment="center"/>
         <TextView class="redheader" text="Del 8 al 12 de FEBRERO" />
-        <TextView text="aaaaaaaaaaa" />
 
         <TextView class="header" text="Usa la aplicacion para enterarte de lo ultimo en el evento" isEditable="false" />
         <!--Header area stop!-->
