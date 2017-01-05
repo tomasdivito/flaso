@@ -16,7 +16,7 @@ var hide_unhide = function(args) {
       toHide.animate({
         opacity: 0, duration: 2000
       });
-      toHide.visibility = visibility.Visibility..collapse;
+      toHide.visibility = visibility.Visibility.collapse;
   }
 }
 exports.hide_unhide = hide_unhide;
