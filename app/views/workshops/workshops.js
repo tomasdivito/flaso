@@ -6,14 +6,14 @@ var page;
 var hide_unhide = function(args) {
   var toHide = page.getViewById("workshop_description_1");
   if(toHide.opacity === 0) {
-    toHide.animate {
+    toHide.animate({
       opacity = 1, duration = 1000
     });
     toHide.visibility = Visibility.visible;
   }
   else {
     if(toHide.opacity === 0) {
-      toHide.animate {
+      toHide.animate({
         opacity = 0, duration = 1000
       });
       toHide.visibility = Visibility.collapse;
