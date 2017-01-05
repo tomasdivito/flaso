@@ -1,7 +1,7 @@
 var visibility = require("ui/enums");
 
 var page;
-var visible ? visibility.Visibility.visible : visibility.Visibility.collapse;
+var visible;
 
 var hide_unhide = function(args) {
   var toHide = page.getViewById("workshop_description_1");
