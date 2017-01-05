@@ -1,5 +1,5 @@
 var hide_unhide = function(args) {
-  id = args.object.id;
+  id = args.object.parent.id;
   alert(id);
 }
 exports.hide_unhide = hide_unhide;
