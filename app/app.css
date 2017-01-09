@@ -91,6 +91,7 @@ Button {
 }
 
 Button.button_menu {
+  margin: 5px;
 }
 
 Button:highlighted {
