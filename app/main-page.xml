@@ -22,12 +22,11 @@
         <Image class="button_img" src="~/images/botones/estrellas_invitadas.png" horizontalAlignment="center" tap="estrellas_invitadas" touch="touch_effect" />
         <Image class="button_img" src="~/images/botones/workshop.png" horizontalAlignment="center" tap="workshop" touch="touch_effect" />
         <Image class="button_img" src="~/images/botones/hotelyteatrosede.png" horizontalAlignment="center" tap="teatrohotelsede" touch="touch_effect"/>
-        <GridLayout rows="auto, auto" columns="*, *">
-          <Button tap="masinformacion" class="button_menu" text="Mas informacion del evento" row="0" col="0" touch="touch_effect" />
-          <Button class="button_menu" text="F A Q" row="0" col="1" touch="touch_effect" tap="faq" />
-          <Button class="button_menu" text="Sitio oficial" row="1" col="0" touch="touch_effect" id="website" tap="gotoweb"/>
-          <Button tap="comites" class="button_menu" text="Comite organizador y colaboradores" row="1" col="1" touch="touch_effect" />
+        <GridLayout rows="auto" columns="*, *">
+          <Button class="button_menu" text="F A Q" row="0" col="0" touch="touch_effect" tap="faq" />
+          <Button class="button_menu" text="Sitio oficial" row="0" col="1" touch="touch_effect" id="website" tap="gotoweb"/>
         </GridLayout>
+        <Button tap="comites" class="button_menu" text="Comite organizador y colaboradores" touch="touch_effect" />
 
 
         <!--Other stuff in the main!-->
