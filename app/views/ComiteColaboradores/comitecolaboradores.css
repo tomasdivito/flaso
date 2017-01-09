@@ -1,0 +1,17 @@
+TextView.head {
+  font-size: 25;
+  text-decoration: underline;
+  color: #cc0000;
+}
+
+TextView {
+  margin: 0px;
+}
+
+TextView.name {
+  font-weight: bold;
+}
+
+TextView.subtitle {
+  font-size: 15px;
+}

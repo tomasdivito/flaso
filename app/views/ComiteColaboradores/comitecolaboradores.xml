@@ -8,4 +8,29 @@
       </StackLayout>
     </ActionBar>
   </Page.actionBar>
+  <ScrollView>
+    <StackLayout>
+      <TextView class="head" text="Comite Organizador" />
+      <GridLayout columns="*, *, *" rows="*, *">
+        <StackLayout col="1">
+          <Image src="~/images/comite/ray francas - presidente.png" />
+          <TextView class="name" text="Ray Francas" />
+          <TextView class="subtitle" text="Presidente" />
+        </StackLayout>
+        <StackLayout col="0" row="1">
+          <Image src="~/images/comite/lorenzo pedemonti - stage manager.png" />
+          <TextView class="name" text="Lorenzo Pedemonti" />
+          <TextView class="subtitle" text="Stage Manager" />
+        </StackLayout>
+        <StackLayout col="2" row="1">
+          <Image src="~/images/comite/daniel mormina - tesorero.png" />
+          <TextView class="name" text="Daniel Mormina" />
+          <TextView class="subtitle" text="Tesorero" />
+        </StackLayout>
+      </GridLayout>
+
+      <TextView class="head" text="Colaboradores" />
+    </StackLayout>
+  </ScrollView>
+
 </Page>
