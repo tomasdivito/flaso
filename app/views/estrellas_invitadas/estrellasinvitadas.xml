@@ -13,14 +13,10 @@
     <StackLayout>
       <Image src="~/images/otras/40_artistas.jpg" height="150"/>
       <TextView text="Descubre a los 40 artistas invitados en FLASOMA 2017" class="subtitle" />
-
       <ScrollView orientation="horizontal" class="gallery">
         <GridLayout rows="*" columns="*, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"  id="gridgallery">
-
         </GridLayout>
       </ScrollView>
-
-
     </StackLayout>
   </ScrollView>
 </Page>

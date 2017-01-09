@@ -22,10 +22,10 @@ exports.teatrohotelsede = function() {
 exports.faq = function() {
   frameModule.topmost().navigate("views/faq/faq");
 }
-exports.comites = function {
+exports.comites = function() {
   frameModule.topmost().navigate("views/ComiteColaboradores/comitecolaboradores");
 }
-exports.masinformacion = function {
+exports.masinformacion = function() {
   frameModule.topmost().navigate("views/masinformacion/masinformacion");
 }
 //end of link section
