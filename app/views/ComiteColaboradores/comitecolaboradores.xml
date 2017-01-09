@@ -11,18 +11,18 @@
   <ScrollView>
     <StackLayout>
       <TextView class="head" text="Comite Organizador" />
-      <GridLayout columns="*, *, *" rows="*, *">
-        <StackLayout col="1">
+      <GridLayout columns="*, *, *" rows="*">
+        <StackLayout class="col_box" col="1">
           <Image src="~/images/comite/ray francas - presidente.png" />
           <TextView class="name" text="Ray Francas" />
           <TextView class="subtitle" text="Presidente" />
         </StackLayout>
-        <StackLayout col="0" row="1">
+        <StackLayout class="col_box" col="0" row="0">
           <Image src="~/images/comite/lorenzo pedemonti - stage manager.png" />
           <TextView class="name" text="Lorenzo Pedemonti" />
           <TextView class="subtitle" text="Stage Manager" />
         </StackLayout>
-        <StackLayout col="2" row="1">
+        <StackLayout class="col_box" col="2" row="0">
           <Image src="~/images/comite/daniel mormina - tesorero.png" />
           <TextView class="name" text="Daniel Mormina" />
           <TextView class="subtitle" text="Tesorero" />
@@ -30,6 +30,10 @@
       </GridLayout>
 
       <TextView class="head" text="Colaboradores" />
+      <ScrollView orientation="horizontal">
+        <GridLayout rows="*" columns="150, 150, 150, 150, 150, 150, 150, 150, 150" id="gridgallery">
+        </GridLayout>
+      </ScrollView>
     </StackLayout>
   </ScrollView>
 
