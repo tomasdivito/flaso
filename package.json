@@ -16,7 +16,7 @@
     "nativescript-plugin-firebase": "^3.9.0",
     "nativescript-push-notifications": "^0.1.0",
     "tab-view": "^1.1.0",
-    "tns-core-modules": "2.4.4"
+    "tns-core-modules": "^2.4.4"
   },
   "devDependencies": {
     "babel-traverse": "6.21.0",

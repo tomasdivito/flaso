@@ -1,12 +1,16 @@
 var application = require("application");
+var firebase = require("nativescript-plugin-firebase");
 
 application.cssFile = "./app.css";
 
-var firebase = require("nativescript-plugin-firebase");
-
 firebase.init({
-  // Optionally pass in properties for database, authentication and cloud messaging,
-  // see their respective docs.
+  onMessageReceivedCallback: function(message) {
+      console.log("Title: " + message.title);
+      console.log("Body: " + message.body);
+      alert(message.title + ": " + message.body);
+      // if your server passed a custom property called 'foo', then do this:
+      console.log("Value of 'foo': " + message.foo);
+    }
 }).then(
     function (instance) {
       console.log("firebase.init done");
