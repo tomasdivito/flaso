@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "540029998098",
+    "firebase_url": "https://flasoma2017-72ce6.firebaseio.com",
+    "project_id": "flasoma2017-72ce6",
+    "storage_bucket": "flasoma2017-72ce6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540029998098:android:1660dc09d2059cf8",
+        "android_client_info": {
+          "package_name": "org.nativescript.flasoma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540029998098-i67vkebg7ib2vide25t73bu1ktc9i5m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyf86ZR0c1_BdmkJtD9Xn_XuYlIIVfQ5c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
