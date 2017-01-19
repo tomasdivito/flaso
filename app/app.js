@@ -14,9 +14,6 @@ firebase.init({
 
       var toast = Toast.makeText(message.body, "long");
       toast.show();
-
-      // if your server passed a custom property called 'foo', then do this:
-      console.log("Value of 'foo': " + message.foo);
     }
 }).then(
     function (instance) {
@@ -27,7 +24,6 @@ firebase.init({
     }
 );
 
-//uncomment next line when implemmented in the plugin :(
 firebase.subscribeToTopic("flasoma");
 console.log("subscribed to flasoma")
 
