@@ -13,7 +13,8 @@
     }
   },
   "dependencies": {
-    "nativescript-plugin-firebase": "^3.9.0",
+    "nativescript-fancyalert": "^1.1.2",
+    "nativescript-plugin-firebase": "git+https://github.com/EddyVerbruggen/nativescript-plugin-firebase.git",
     "nativescript-push-notifications": "^0.1.0",
     "nativescript-toast": "^1.4.5",
     "tab-view": "^1.1.0",
