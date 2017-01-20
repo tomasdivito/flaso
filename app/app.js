@@ -3,6 +3,8 @@ var firebase = require("nativescript-plugin-firebase");
 var Toast = require("nativescript-toast");
 var dialogs = require("ui/dialogs");
 var SweetAlert = require('ns-sweet-alert');
+import platform = require("platform");
+
 /*
 	*/
 
