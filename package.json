@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "nativescript-fancyalert": "^1.1.2",
-    "nativescript-plugin-firebase": "^3.9.1",
+    "nativescript-plugin-firebase": "^3.9.2",
     "nativescript-push-notifications": "^0.1.0",
     "nativescript-toast": "^1.4.5",
     "ns-sweet-alert": "^1.0.1",

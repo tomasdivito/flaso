@@ -2,11 +2,7 @@ var application = require("application");
 var firebase = require("nativescript-plugin-firebase");
 var Toast = require("nativescript-toast");
 var dialogs = require("ui/dialogs");
-var SweetAlert = require('ns-sweet-alert');
-import platform = require("platform");
-
-/*
-	*/
+var platform = require("platform");
 
 application.cssFile = "./app.css";
 
@@ -15,6 +11,7 @@ firebase.init({
       console.log("Title: " + message.title);
       console.log("Body: " + message.body);
       if(application.android) {
+        var SweetAlert = require('ns-sweet-alert');
         SweetAlert.simpleAlert(message.body, application.android.foregroundActivity);
       }
       else {
