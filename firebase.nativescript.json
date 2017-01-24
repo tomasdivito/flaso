@@ -4,7 +4,7 @@
     "remote_config": true,
     "messaging": true,
     "crash_reporting": true,
-    "storage": true,
+    "storage": false,
     "facebook_auth": false,
     "google_auth": false
 }

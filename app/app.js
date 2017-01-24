@@ -10,13 +10,7 @@ firebase.init({
   onMessageReceivedCallback: function(message) {
       console.log("Title: " + message.title);
       console.log("Body: " + message.body);
-      if(application.android) {
-        var SweetAlert = require('ns-sweet-alert');
-        SweetAlert.simpleAlert(message.body, application.android.foregroundActivity);
-      }
-      else {
         alert(message.body);
-      }
       //var toast = Toast.makeText(message.body, "long");
       //toast.show();
     }
