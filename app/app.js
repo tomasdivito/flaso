@@ -28,12 +28,12 @@ firebase.init({
 }).then(
     function (instance) {
       console.log("firebase.init done");
+      firebase.subscribeToTopic("news");
+      console.log("subscribed to news")
     },
     function (error) {
       console.log("firebase.init error: " + error);
     }
 );
-firebase.subscribeToTopic("news");
-console.log("subscribed to news")
 
 application.start({ moduleName: "main-page" });
