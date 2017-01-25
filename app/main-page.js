@@ -4,6 +4,7 @@ var observable    = require("data/observable");
 var webViewModule = require("ui/web-view");
 var frameModule   = require("ui/frame");
 var utilityModule = require("utils/utils");
+var firebase = require("nativescript-plugin-firebase");
 
 // Our new Observable view model for data binding
 var viewmodel = new observable.Observable({});

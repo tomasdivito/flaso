@@ -10,9 +10,8 @@ firebase.init({
   onMessageReceivedCallback: function(message) {
       console.log("Title: " + message.title);
       console.log("Body: " + message.body);
-        alert(message.body);
-      //var toast = Toast.makeText(message.body, "long");
-      //toast.show();
+      var toast = Toast.makeText(message.body, "long");
+      toast.show();
     }
 }).then(
     function (instance) {
@@ -22,8 +21,7 @@ firebase.init({
       console.log("firebase.init error: " + error);
     }
 );
-
-firebase.subscribeToTopic("flasoma");
-console.log("subscribed to flasoma")
+firebase.subscribeToTopic("news");
+console.log("subscribed to news")
 
 application.start({ moduleName: "main-page" });
