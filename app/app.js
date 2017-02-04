@@ -1,6 +1,5 @@
 var application = require("application");
 var firebase = require("nativescript-plugin-firebase");
-var Toast = require("nativescript-toast");
 var dialogs = require("ui/dialogs");
 var platform = require("platform");
 var dialogs = require("ui/dialogs");

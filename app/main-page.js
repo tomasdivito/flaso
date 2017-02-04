@@ -29,6 +29,9 @@ exports.comites = function() {
 exports.masinformacion = function() {
   frameModule.topmost().navigate("views/masinformacion/masinformacion");
 }
+exports.schedule = function() {
+  frameModule.topmost().navigate("views/schedule/schedule");
+}
 //end of link section
 
 function toggle_header() {

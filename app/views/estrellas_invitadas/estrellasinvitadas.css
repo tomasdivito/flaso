@@ -31,3 +31,14 @@ Image {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.banner {
+  margin-top: 15px;
+}
+
+.bordered_image {
+  margin: 3px;
+  border-radius: 3px;
+  border-width: 3px;
+  border-color: white;
+}

@@ -17,6 +17,9 @@
         <GridLayout rows="*" columns="*, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *, *"  id="gridgallery">
         </GridLayout>
       </ScrollView>
+      <StackLayout class="bordered_image">
+        <Image src="~/images/banner.jpg" class="banner" />
+      </StackLayout>
     </StackLayout>
   </ScrollView>
 </Page>
