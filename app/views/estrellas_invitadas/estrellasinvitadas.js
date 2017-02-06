@@ -40,6 +40,7 @@ var  magicians = [
     {name: "Volkane", country: "Argentina", imgPath: "~/images/artists/volkane - argentina.png"},
     {name: "Zerrot", country: "Argentina", imgPath: "~/images/artists/zerrot - argentina.png"},
     // Nuevos invitados agregados
+    // Added
     {name: "Boris Wild", country: "Francia", imgPath: "~/images/artists/boris.png"},
     {name: "Juan Luis Rubiales", country: "España", imgPath: "~/images/artists/juanluis.png"},
     {name: "Caio Fereira", country: "Brasil", imgPath: "~/images/artists/caio.png"},
