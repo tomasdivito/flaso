@@ -31,7 +31,7 @@
 
       <TextView class="head" text="Colaboradores" />
       <ScrollView orientation="horizontal">
-        <GridLayout rows="*" columns="150, 150, 150, 150, 150, 150, 150, 150, 150" id="gridgallery">
+        <GridLayout rows="*" columns="150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150, 150" id="gridgallery">
         </GridLayout>
       </ScrollView>
     </StackLayout>

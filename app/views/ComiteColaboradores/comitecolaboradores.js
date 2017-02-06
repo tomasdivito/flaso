@@ -13,6 +13,15 @@ var colaboradores = [
   {name: "Multtán", subtitle: "Director artistico", imgPath: "~/images/comite/colaboradores/multtan - director artistico.png"},
   {name: "Natalia Cahiza", subtitle: "RRPP", imgPath: "~/images/comite/colaboradores/natalia cahiza - rrpp.png"},
   {name: "Ramsor", subtitle: "Responsable de hoteleria", imgPath: "~/images/comite/colaboradores/ramsor - responsable de hoteleria.png"},
+  // Agregados a ultimo momento
+  /*
+  Marroche  Responsable de refrigerios
+  Willy Tidona  - Responsable de conferencias en sala Rio Parana
+  Omar pastor - Responsable de conferencias en sala Amazonas
+  */
+  {name: "Marroche", subtitle: "Responsable de refrigerios", imgPath: "~/images/comite/colaboradores/marroche.png"},
+  {name: "Willy Tidona", subtitle: "Responsable de conferencias en sala Rio Parana", imgPath: "~/images/comite/colaboradores/will.png"},
+  {name: "Omar pastor", subtitle: "Responsable de conferencias en sala Amazonas", imgPath: "~/images/comite/colaboradores/omarpastor.png"}
 ]
 
 var loadGridGallery = function(gg) {
