@@ -15,17 +15,13 @@ var  magicians = [
     {name: "Daniel Garber", country: "Argentina", imgPath: "~/images/artists/danielGarber - argentina.png"},
     {name: "Daniel Raley", country: "Argentina", imgPath: "~/images/artists/danielRaley - argentina.png"},
     {name: "Fantasio", country: "Argentina", imgPath: "~/images/artists/fantasio - argentina.png"},
-    {name: "Fernando Arribas", country: "Espana", imgPath: "~/images/artists/fernandoArribas - espana.png"},
     {name: "Fernando Arsenian", country: "Argentina", imgPath: "~/images/artists/fernandoArsenian - argentina.png"},
     {name: "Fred Karis", country: "USA", imgPath: "~/images/artists/fredKaris - USA.png"},
     {name: "Gaferlo", country: "Mexico", imgPath: "~/images/artists/gaferlo - mexico.png"},
     {name: "Gustav", country: "Argentina", imgPath: "~/images/artists/gustav - argentina.png"},
-    {name: "Gustavo Raley", country: "Argentina", imgPath: "~/images/artists/gustavoRaley - argentina.png"},
     {name: "Hector Mancha", country: "Espana", imgPath: "~/images/artists/hectorMancha - espana.png"},
     {name: "Henry Evans", country: "Argentina", imgPath: "~/images/artists/henryEvans - argentina.png"},
     {name: "Hernic", country: "Argentina", imgPath: "~/images/artists/hernic - argentina.png"},
-    {name: "Jean Paul Olhaberry", country: "Chile", imgPath: "~/images/artists/jeanPaulOlhaberry - chile.png"},
-    {name: "Jean Pierre Vallarino", country: "Francia", imgPath: "~/images/artists/jeanPierreVallarino - francia.png"},
     {name: "Jim", country: "Mexico", imgPath: "~/images/artists/jim - mexico.png"},
     {name: "Juan Pablo Ibanez", country: "Argentina", imgPath: "~/images/artists/juanPabloIbanez - argentina.png"},
     {name: "Karim", country: "Espana", imgPath: "~/images/artists/karim - espana.png"},
@@ -43,6 +39,14 @@ var  magicians = [
     {name: "Uno Medio", country: "Argentina", imgPath: "~/images/artists/unoMedio - argentina.png"},
     {name: "Volkane", country: "Argentina", imgPath: "~/images/artists/volkane - argentina.png"},
     {name: "Zerrot", country: "Argentina", imgPath: "~/images/artists/zerrot - argentina.png"},
+    // Nuevos invitados agregados
+    // Added
+    {name: "Boris Wild", country: "Francia", imgPath: "~/images/artists/boris.png"},
+    {name: "Juan Luis Rubiales", country: "España", imgPath: "~/images/artists/juanluis.png"},
+    {name: "Caio Fereira", country: "Brasil", imgPath: "~/images/artists/caio.png"},
+    {name: "Merpin", country: "Argentina", imgPath: "~/images/artists/mepin.png"},
+    {name: "Agustin Vigione", country: "Argentina", imgPath: "~/images/artists/agus.png"},
+    {name: "Matus", country: "Argentina", imgPath: "~/images/artists/matus.png"}
   ];
 
 var loadGridGallery = function(gg) {
