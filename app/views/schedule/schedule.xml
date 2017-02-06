@@ -1,0 +1,18 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar title="Back">
+      <StackLayout orientation="horizontal"
+        ios:horizontalAlignment="center"
+        android:horizontalAlignment="center">
+        <Image src="~/images/logo_lg.png" class="action-image"></Image>
+      </StackLayout>
+    </ActionBar>
+  </Page.actionBar>
+  <ScrollView>
+    <ScrollView orientation="horizontal" >
+      <StackLayout>
+        <Image src="~/images/horarios.jpg" />
+      </StackLayout>
+    </ScrollView>
+  </ScrollView>
+</Page>
