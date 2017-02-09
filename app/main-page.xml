@@ -21,7 +21,7 @@
         <Image class="button_img" src="~/images/botones/estrellas_invitadas.png" horizontalAlignment="center" tap="estrellas_invitadas" touch="touch_effect" />
         <Image class="button_img" src="~/images/botones/workshop.png" horizontalAlignment="center" tap="workshop" touch="touch_effect" />
         <Image class="button_img" src="~/images/botones/hotelyteatrosede.png" horizontalAlignment="center" tap="teatrohotelsede" touch="touch_effect"/>
-        <Image class="button_img" src="~/images/botones/imagenes_evento_boton.png" horizontalAlignment="center" touch="touch_effect" />
+        <Image class="button_img" src="~/images/botones/imagenes_evento_boton.png" horizontalAlignment="center" touch="touch_effect" tap="gallery" />
         <Button tap="schedule" text="Horarios" touch="touch_effect" />
         <GridLayout rows="auto" columns="*, *">
           <Button class="button_menu" text="F A Q" row="0" col="0" touch="touch_effect" tap="faq" />
