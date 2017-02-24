@@ -32,6 +32,9 @@ exports.masinformacion = function() {
 exports.schedule = function() {
   frameModule.topmost().navigate("views/schedule/schedule");
 }
+exports.gallery = function () {
+  frameModule.topmost().navigate("views/gallery/gallery");
+}
 //end of link section
 
 function toggle_header() {

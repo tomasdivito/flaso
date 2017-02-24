@@ -1,0 +1,12 @@
+.grid {
+  orientation: horizontal;
+}
+
+.scroll {
+  orientation: horizontal;
+}
+
+.gallery-image {
+  margin-right: 20px;
+  margin-left: 20px;
+}
